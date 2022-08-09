@@ -95,20 +95,11 @@ select {
   --fw-bold: 700;
 }
 
-/**------------------- 
-**     GENERAL
---------------------*/
-body {
-  font-family: var(--ff-libre-franklin);
-  font-size: var(--fs-default);
-}
-
-.main {
-  width: 100vw;
-  min-height: 100vh;
-}
-
-.btn {
+@media only screen and (max-width: 30.5rem) {
+  :root {
+    --fs-default: 0.875rem;
+    --fs-header-1: 1.75rem;
+  }
 }
 
 /**------------------- 
@@ -153,20 +144,31 @@ body {
 }
 
 /**------------------- 
+**     GENERAL
+--------------------*/
+body {
+  font-family: var(--ff-libre-franklin);
+  font-size: var(--fs-default);
+  padding: 3rem 0.625rem;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+/**------------------- 
 **     HEADER
 --------------------*/
 .header {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 8rem;
+  min-height: 5rem;
 }
 
 /**------------------- 
 **  LAUNCHING SOON
 --------------------*/
-.launching-soon {
-}
 
 .launching-soon__title {
   color: hsl(var(--clr-gray));
@@ -194,7 +196,7 @@ body {
   gap: 1rem;
 }
 
-@media only screen and (max-width: 29.375rem) {
+@media only screen and (max-width: 30.5rem) {
   .form--subscription {
     flex-direction: column;
   }
@@ -248,3 +250,27 @@ body {
 /**------------------- 
 **      FOOTER
 --------------------*/
+.footer__media-icons {
+  text-align: center;
+}
+
+.icon {
+  border: 1px solid hsl(var(--clr-gray), 25%);
+  border-radius: 50%;
+  display: inline-block;
+  width: 1.875rem;
+}
+
+.icon:not(.icon:last-child) {
+  margin-right: 0.625rem;
+}
+
+.icon img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.copyright-text {
+  color: hsl(var(--clr-gray));
+  text-align: center;
+}
