@@ -69,12 +69,36 @@ select {
 **   CUSTOM PROPS
 --------------------*/
 :root {
+  /* COLOURS */
+
+  /* primary */
+  --clr-blue: 223, 87%, 63%;
+
+  /* secondary */
+  --clr-pale-blue: 223, 100%, 88%;
+  --clr-light-red: 354, 100%, 66%;
+
+  /* neutral */
+  --clr-gray: 0, 0%, 59%;
+  --clr-very-dark-blue: 209, 33%, 12%;
+
+  /* FONT FAMILY */
+  --ff-libre-franklin: 'Libre Franklin', sans-serif;
+
+  /* FONT SIZE */
+  --fs-default: 1.25rem;
+
+  /* FONT WEIGHT */
+  --ff-light: 300;
+  --ff-semi-bold: 600;
+  --ff-bold: 700;
 }
 
 /**------------------- 
 **     GENERAL
 --------------------*/
 body {
+  font-family: var(--ff-libre-franklin);
 }
 
 .main {
@@ -88,4 +112,57 @@ body {
 
 /**------------------- 
 **    UTILITIES
+--------------------*/
+.sr-only {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.container {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+/**------------------- 
+**     HEADER
+--------------------*/
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 8rem;
+}
+
+/**------------------- 
+**       FORM
+--------------------*/
+
+/**------------------- 
+**       MAIN
+--------------------*/
+.section-main {
+  width: 375px;
+}
+
+.illustration {
+  height: 100%;
+  width: 100%;
+}
+
+.illustration img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+/**------------------- 
+**      FOOTER
 --------------------*/
