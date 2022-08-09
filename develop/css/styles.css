@@ -87,11 +87,12 @@ select {
 
   /* FONT SIZE */
   --fs-default: 1.25rem;
+  --fs-header-1: 2.875rem;
 
   /* FONT WEIGHT */
-  --ff-light: 300;
-  --ff-semi-bold: 600;
-  --ff-bold: 700;
+  --fw-light: 300;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
 }
 
 /**------------------- 
@@ -99,6 +100,7 @@ select {
 --------------------*/
 body {
   font-family: var(--ff-libre-franklin);
+  font-size: var(--fs-default);
 }
 
 .main {
@@ -131,6 +133,13 @@ body {
   margin: 0 auto;
 }
 
+.mb--1 {
+  margin-bottom: 1rem;
+}
+.mb--2 {
+  margin-bottom: 2rem;
+}
+
 /**------------------- 
 **     HEADER
 --------------------*/
@@ -139,6 +148,30 @@ body {
   align-items: flex-end;
   justify-content: center;
   min-height: 8rem;
+}
+
+/**------------------- 
+**  LAUNCHING SOON
+--------------------*/
+.launching-soon {
+}
+
+.launching-soon__title {
+  color: hsl(var(--clr-gray));
+  font-size: var(--fs-header-1);
+  font-weight: var(--fw-light);
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.launching-soon__title span {
+  color: hsl(var(--clr-very-dark-blue));
+  font-weight: var(--fw-bold);
+}
+
+.launching-soon__text {
+  margin-top: 0.7rem;
+  text-align: center;
 }
 
 /**------------------- 
