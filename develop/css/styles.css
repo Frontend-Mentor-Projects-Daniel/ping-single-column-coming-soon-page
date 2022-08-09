@@ -287,6 +287,14 @@ body {
 }
 
 .footer__media-icon {
+  display: inline-block;
+  border: 1px solid hsl(var(--clr-gray), 25%);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.footer__media-icon:hover {
+  background-color: hsl(var(--clr-blue));
 }
 
 .footer__media-icon:not(.footer__media-icon:last-child) {
@@ -294,13 +302,18 @@ body {
 }
 
 .icon {
-  border: 1px solid hsl(var(--clr-gray), 25%);
-  border-radius: 50%;
   display: inline-block;
+  fill: hsl(var(--clr-blue));
+  height: 1.875rem;
+  text-align: center;
+  vertical-align: middle;
   width: 1.875rem;
 }
 
-/* FIXME: That white space wasn't part of the icon! Get new pictures without all that space, and style the footer__media-icon to create that round border and space */
+.footer__media-icon:hover .icon {
+  fill: white;
+}
+
 .icon img {
   object-fit: contain;
   width: 100%;
