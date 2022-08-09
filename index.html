@@ -54,15 +54,16 @@
       <p class="launching-soon__text">Subscribe and get notified</p>
     </div>
 
-    <form class="form--subscription container mb--5">
+    <form data-form class="form--subscription container mb--5">
       <div class="form-controls">
         <label class="sr-only" for="email">email</label>
         <input
+          data-input-email
           class="form--subscription__email"
-          type="email"
+          type="text"
           placeholder="Your email address..."
         />
-        <span class="error-message-text error--message hide"
+        <span data-error-message class="error-message-text error--message hide"
           >Please provide a valid email address</span
         >
       </div>

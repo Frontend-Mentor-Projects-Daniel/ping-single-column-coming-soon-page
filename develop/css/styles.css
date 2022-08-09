@@ -151,6 +151,10 @@ select {
   border-color: hsl(var(--clr-light-red)) !important;
 }
 
+.error--border:focus {
+  outline: hsl(var(--clr-light-red)) !important;
+}
+
 .error--message {
   color: hsl(var(--clr-light-red));
   font-size: 12px;
