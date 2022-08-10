@@ -49,26 +49,31 @@
       </div>
     </header>
 
-    <div class="launching-soon mb--3 container">
+    <div role="heading" aria-level="1" class="launching-soon mb--3 container">
       <h1 class="launching-soon__title">We are launching <span>soon!</span></h1>
       <p class="launching-soon__text">Subscribe and get notified</p>
     </div>
 
-    <form data-form class="form--subscription container mb--5">
-      <div class="form-controls">
-        <label class="sr-only" for="email">email</label>
-        <input
-          data-input-email
-          class="form--subscription__email"
-          type="text"
-          placeholder="Your email address..."
-        />
-        <span data-error-message class="error-message-text error--message hide"
-          >Please provide a valid email address</span
-        >
-      </div>
-      <button class="btn form--subscription__btn">Notify Me</button>
-    </form>
+    <section>
+      <form data-form class="form--subscription container mb--5">
+        <div class="form-controls">
+          <label class="sr-only" for="email">email</label>
+          <input
+            id="email"
+            data-input-email
+            class="form--subscription__email"
+            type="text"
+            placeholder="Your email address..."
+          />
+          <span
+            data-error-message
+            class="error-message-text error--message hide"
+            >Please provide a valid email address</span
+          >
+        </div>
+        <button class="btn form--subscription__btn">Notify Me</button>
+      </form>
+    </section>
 
     <main class="main mb--5">
       <section class="section-main container">
@@ -85,6 +90,7 @@
       <div class="footer__media-icons mb--1">
         <span class="footer__media-icon">
           <a href="#">
+            <span class="sr-only">facebook link</span>
             <svg class="icon">
               <use
                 xlink:href="./develop/assets/images/sprite.svg#facebook"
@@ -94,6 +100,7 @@
         </span>
         <span class="footer__media-icon">
           <a href="#">
+            <span class="sr-only">facebook link</span>
             <svg class="icon">
               <use
                 xlink:href="./develop/assets/images/sprite.svg#twitter"
@@ -103,6 +110,7 @@
         </span>
         <span class="footer__media-icon">
           <a href="#">
+            <span class="sr-only">facebook link</span>
             <svg class="icon">
               <use
                 xlink:href="./develop/assets/images/sprite.svg#instagram"
